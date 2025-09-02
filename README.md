@@ -12,7 +12,7 @@ echo x > /tmp/src/subdir/test.txt
 cp -a /tmp/src /tmp/dst
 ~~~
 
-### find missing files
+### Find missing (new) files
 Default mode is `exists` - file considered different if it's completely missing in dst/
 
 ~~~bash
@@ -29,7 +29,7 @@ new.txt
 ~~~
 
 
-### find updated file
+### Find modified files
 
 you can use `-m`/`--method` (exists, mtime, size, hash) for more accurate checking
 
@@ -49,7 +49,7 @@ deltadir /tmp/src/ /tmp/dst/ -m hash -s --overwrite
 new.txt
 ~~~
 
-### always recursive
+### Always recursive
 deltadir always work recursively.
 
 ~~~bash
@@ -59,7 +59,7 @@ deltadir /tmp/src/ /tmp/dst/
 subdir/newfile.txt
 ~~~
 
-### see result as table
+### See result as table
 Add `-t`/`--table` to see results as table:
 ~~~
 deltadir /tmp/src/ /tmp/dst/  -t

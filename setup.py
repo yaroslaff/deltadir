@@ -1,6 +1,5 @@
 from setuptools import setup, find_packages
 
-# Читаем версию напрямую из __version__.py
 def read_version():
     ns = {}
     with open("deltadir/__version__.py") as f:
@@ -18,8 +17,8 @@ setup(
     description="Compare directories. Source (src) never modified, dst can be updated with -s/--sync",
     long_description=open("README.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
-    author="Your Name",
-    author_email="you@example.com",
+    author="Yaroslav Polyakov",
+    author_email="yaroslaff@gmail.com",
     license="MIT",
     install_requires=[],
 )

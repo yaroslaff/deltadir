@@ -2,6 +2,11 @@
 
 Compare directories using various methods and optionally synchronize them.
 
+## Install
+~~~
+pipx install deltadir
+~~~
+
 ## Examples
 ### Create test environment
 ~~~bash

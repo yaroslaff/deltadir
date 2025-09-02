@@ -1,0 +1,18 @@
+[project]
+name = "deltadir"
+version = "0.1.0"
+description = "Compare source and destination directories and perform actions on differences"
+authors = [
+    { name = "Your Name", email = "you@example.com" }
+]
+requires-python = ">=3.10"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+deltadir = "deltadir.__main__:main"

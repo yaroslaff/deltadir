@@ -1,6 +1,6 @@
 # DeltaDir
 
-Compare directories (different methods) and optionally sync it.
+Compare directories using various methods and optionally synchronize them.
 
 ## Examples
 ### Create test environment
@@ -13,7 +13,7 @@ cp -a /tmp/src /tmp/dst
 ~~~
 
 ### Find missing (new) files
-Default mode is `exists` - file considered different if it's completely missing in dst/
+The default mode is `exists`: a file is considered different if it is completely missing in the destination directory (dst/).
 
 ~~~bash
 # create new file in src
@@ -23,7 +23,7 @@ echo new > /tmp/src/new.txt
 deltadir /tmp/src/ /tmp/dst/
 new.txt
 
-# lets -s / --sync it!
+# Let's synchronize it using -s or --sync! (no overwrite by default)
 deltadir /tmp/src/ /tmp/dst/ --sync
 new.txt
 ~~~

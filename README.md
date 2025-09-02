@@ -15,7 +15,7 @@ cp -a /tmp/src /tmp/dst
 ### find missing files
 Default mode is `exists` - file considered different if it's completely missing in dst/
 
-~~~
+~~~bash
 # create new file in src
 echo new > /tmp/src/new.txt
 
